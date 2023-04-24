@@ -52,7 +52,7 @@ def upload_file():
             print("iniciando guardado de archivo")
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             print("iniciando prediccion")
-            # prediccion = categorizar(UPLOAD_FOLDER+'/'+filename)
+            prediccion = categorizar(UPLOAD_FOLDER+'/'+filename)
             # os.remove(UPLOAD_FOLDER+'/'+filename)
             return prediccion_("cola")
 
